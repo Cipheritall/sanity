@@ -16,8 +16,6 @@ import player from './game'
 import wallet from './game'
 import site_config from './site_config'
 
-import site_config from './site_config'
-
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema

@@ -1,11 +1,11 @@
 {
   "root": true,
   "project": {
-    "name": "vercel-template-blog-studio"
+    "name": "darkred-lark"
   },
   "api": {
-    "projectId": "YOUR_PROJECT_ID",
-    "dataset": "YOUR_DATASET_NAME"
+    "projectId": "9kfzk4em",
+    "dataset": "blog"
   },
   "plugins": [
     "@sanity/base",

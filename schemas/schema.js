@@ -6,11 +6,10 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
 import blockContent from './blockContent'
-import category from './category'
 import post from './post'
 import author from './author'
 
-import game_category from './game_category'
+import category from './category'
 import provider from './provider'
 import game from './game'
 import site_config from './site_config'

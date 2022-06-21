@@ -22,7 +22,7 @@ export default {
         }, {
             name: "iframe",
             title: "Iframe",
-            type: "text"
+            type: "url"
         },
         {
             name: "category",

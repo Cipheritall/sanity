@@ -31,7 +31,6 @@ export default createSchema({
     blockContent,
     site_config,
     game,
-    provider,
-    game_category
+    provider    
   ])
 })

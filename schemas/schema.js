@@ -12,8 +12,8 @@ import author from './author'
 import category from './category'
 import provider from './provider'
 import game from './game'
-import player from './game'
-import wallet from './game'
+import player from './player'
+import wallet from './wallet'
 import site_config from './site_config'
 
 // Then we give our schema to the builder and provide the result to Sanity

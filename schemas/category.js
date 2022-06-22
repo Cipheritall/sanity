@@ -14,9 +14,9 @@ export default {
         type: 'text',
     },
     {
-        name: "Category",
-        title: "Category",
-        type: "string"
+        name: "slug",
+        title: "Slug",
+        type: "slug"
     }, {
         name: "thumbnail",
         title: "Thumbnail",

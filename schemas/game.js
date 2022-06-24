@@ -3,69 +3,74 @@ export default {
     title: "Game",
     type: "document",
     fields: [{
-            name: "name",
-            title: "Name",
-            type: "string",
-        },
-        {
-          name: 'slug',
-          title: 'Slug',
-          type: 'slug',
-          options: {
+        name: "name",
+        title: "Name",
+        type: "string",
+    },
+    {
+        title: 'Demo',
+        name: 'isdemo',
+        type: 'boolean'
+    },
+    {
+        name: 'slug',
+        title: 'Slug',
+        type: 'slug',
+        options: {
             source: 'name',
             maxLength: 96
-          }
-        }, {
-            name: "thumbnail",
-            title: "Thumbnail",
-            type: "image"
-        }, {
-            name: "iframe",
-            title: "Iframe",
-            type: "url"
-        },
-        {
-            name: "category",
-            title: "Category",
-            type: "reference",
-            to: [{ type: 'category' }]
-        }, {
-            name: "provider",
-            title: "Provider",
-            type: "reference",
-            to: [{ type: 'provider' }]
-        }, {
-            name: "players",
-            title: "Players",
-            type: "array",
-            of: [{
-                name: "fan_players",
-                title: "Fan players",
-                type: "object",
-                fields: [{
-                    name: "player",
-                    type: "reference",
-                    to: [{
-                        type: "player"
-                    }]
-                }, {
-                    name: "loss_value",
-                    title: "Loss value",
-                    type: "string",
-                }, {
-                    name: "gain_value",
-                    title: "Gain value",
-                    type: "string",
-                }, {
-                    name: "enter_time",
-                    type: "datetime",
-                    title: "Enter time"
-                }, {
-                    name: "exit_time",
-                    type: "datetime",
-                    title: "Exit time"
-                }]
-            }]
         }
+    }, {
+        name: "thumbnail",
+        title: "Thumbnail",
+        type: "image"
+    }, {
+        name: "iframe",
+        title: "Iframe",
+        type: "url"
+    },
+    {
+        name: "category",
+        title: "Category",
+        type: "reference",
+        to: [{ type: 'category' }]
+    }, {
+        name: "provider",
+        title: "Provider",
+        type: "reference",
+        to: [{ type: 'provider' }]
+    }, {
+        name: "players",
+        title: "Players",
+        type: "array",
+        of: [{
+            name: "fan_players",
+            title: "Fan players",
+            type: "object",
+            fields: [{
+                name: "player",
+                type: "reference",
+                to: [{
+                    type: "player"
+                }]
+            }, {
+                name: "loss_value",
+                title: "Loss value",
+                type: "string",
+            }, {
+                name: "gain_value",
+                title: "Gain value",
+                type: "string",
+            }, {
+                name: "enter_time",
+                type: "datetime",
+                title: "Enter time"
+            }, {
+                name: "exit_time",
+                type: "datetime",
+                title: "Exit time"
+            }]
+        }]
+    }
     ]
 }

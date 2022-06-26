@@ -1,5 +1,5 @@
 export default {
-    name: "auth",
+    name: "external_auth",
     title: "External Authentification",
     type: "document",
     fields: [{

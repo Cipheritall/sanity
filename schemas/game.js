@@ -40,18 +40,18 @@ export default {
         type: "reference",
         to: [{ type: 'provider' }]
     }, {
-        name: "players",
-        title: "Players",
+        name: "users",
+        title: "users",
         type: "array",
         of: [{
-            name: "fan_players",
-            title: "Fan players",
+            name: "fan_users",
+            title: "Fan users",
             type: "object",
             fields: [{
-                name: "player",
+                name: "user",
                 type: "reference",
                 to: [{
-                    type: "player"
+                    type: "user"
                 }]
             }, {
                 name: "loss_value",

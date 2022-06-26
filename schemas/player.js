@@ -1,6 +1,6 @@
 export default {
-    name: "player",
-    title: "Player",
+    name: "user",
+    title: "user",
     type: "document",
     fields: [{
         name: "username",

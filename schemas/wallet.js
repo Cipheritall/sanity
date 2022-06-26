@@ -10,7 +10,7 @@ export default {
         name: "owner",
         title: "Owner",
         type: "reference",
-        to: [{ type: "player" }]
+        to: [{ type: "user" }]
     }, {
         name: "image",
         title: "Image",

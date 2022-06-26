@@ -12,7 +12,7 @@ import author from './author'
 import category from './category'
 import provider from './provider'
 import game from './game'
-import player from './player'
+import user from './user'
 import wallet from './wallet'
 import site_config from './site_config'
 
@@ -33,7 +33,7 @@ export default createSchema({
     blockContent,
     site_config,
     game,
-    player,
+    user,
     wallet,
     provider    
   ])

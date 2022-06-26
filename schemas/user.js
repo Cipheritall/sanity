@@ -43,7 +43,7 @@ export default {
         title: "Photo",
         type: "image"
     }, {
-        name: "bank-info",
+        name: "bank_info",
         title: "Bank account",
         type: "object",
         fields: [{

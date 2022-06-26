@@ -1,4 +1,5 @@
 import externalauth from './externalauth'
+import session from './session'
 import countries from './countries'
 import { MdVerifiedUser, MdCall, MdAttachMoney } from 'react-icons/md'
 
@@ -111,26 +112,13 @@ export default {
             type: "reference",
             to: [{ type: 'wallet' }]
         }]
-    }, {
+    },{
         name: "sessions",
         title: "Sessions",
-        type: "object",
-        fields: [{
-            name: "browser",
-            title: "Browser",
-            type: "string"
-        }, {
-            name: "ip",
-            title: "IP Address",
-            type: "string"
-        }, {
-            name: "location",
-            title: "Location",
-            type: "string"
-        }, {
-            name: "last_login",
-            title: "Last Login",
-            type: "datetime"
+        type: "array",
+        of: [{
+            type: "reference",
+            to: [{ type: 'session' }]
         }]
     }]
 }

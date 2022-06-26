@@ -16,6 +16,7 @@ import user from './user'
 import wallet from './wallet'
 import site_config from './site_config'
 import externalauth from "./externalauth"
+import session from './session'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,8 +29,9 @@ export default createSchema({
     // in the studio.
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
-    post,
-    author,
+    
+    // post,
+    // author,
     category,
     blockContent,
     site_config,
@@ -37,6 +39,7 @@ export default createSchema({
     user,
     wallet,
     provider,
-    externalauth
+    externalauth,
+    session
   ])
 })

@@ -126,7 +126,7 @@ export default {
         }, {
             name: "location",
             title: "Location",
-            type: "geopoint"
+            type: "string"
         }, {
             name: "last_login",
             title: "Last Login",

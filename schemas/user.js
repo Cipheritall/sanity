@@ -1,3 +1,4 @@
+import auth from './auth'
 import countries from './countries'
 import {MdVerifiedUser, MdCall, MdAttachMoney}  from 'react-icons/md'
 
@@ -14,14 +15,11 @@ export default {
         name: 'auth',
         type: 'object',
         fields: [
-            { name: 'facebook_uid', type: 'string', title: 'Facebook UID' },
-            { name: 'facebooklastlogin', type: 'datetime', title: 'Last login' },
+            { name: 'facebook_auth', type: 'auth', title: 'Facebook AUTH' },
             
-            { name: 'google_uid', type: 'string', title: 'Google UID' },
-            { name: 'googlelastlogin', type: 'datetime', title: 'Last login' },
+            { name: 'google_auth', type: 'auth', title: 'Google AUTH' },
 
-            { name: 'github_uid', type: 'string', title: 'Github UID' },
-            { name: 'githublastlogin', type: 'datetime', title: 'Last login' }
+            { name: 'github_auth', type: 'auth', title: 'Github AUTH' },
         ]
     },
     {

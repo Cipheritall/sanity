@@ -1,5 +1,5 @@
 import countries from './countries'
-
+import {MdVerifiedUser, MdCall, MdAttachMoney}  from 'react-icons/md'
 
 export default {
     name: "user",
@@ -9,7 +9,13 @@ export default {
         name: "username",
         title: "Username",
         type: "string"
-    }, {
+    }, 
+    {
+        title: 'Verified KYC',
+        name: 'isverified',
+        icon: MdVerifiedUser,
+        type: 'boolean'
+    },{
         name: "birthday",
         title: "Date of birth",
         type: "date"
@@ -37,7 +43,7 @@ export default {
         name: "phone",
         title: "Phone Number",
         type: "object", 
-        icon,
+        icon: MdCall,
         fields: [{
             title: 'country',
             name: 'country',
@@ -60,6 +66,7 @@ export default {
         name: "bank_info",
         title: "Bank account",
         type: "object",
+        icon: MdAttachMoney,
         fields: [{
             name: "iban",
             title: "Iban",

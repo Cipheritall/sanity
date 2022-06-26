@@ -1,3 +1,6 @@
+import countries from './countries'
+
+
 export default {
     name: "user",
     title: "user",
@@ -22,9 +25,14 @@ export default {
         title: "Phone Number",
         type: "object",
         fields: [{
-            name: "countryCode",
-            title: "Country Code",
-            type: "string"
+            title: 'country',
+            name: 'country',
+            type: 'string',
+            options: {
+                list: [
+                    ...countries
+                ],
+            }
         }, {
             name: "phoneNumber",
             title: "Phone Number",
@@ -34,6 +42,29 @@ export default {
         name: "photo",
         title: "Photo",
         type: "image"
+    }, {
+        name: "bank-info",
+        title: "Bank account",
+        type: "object",
+        fields: [{
+            name: "iban",
+            title: "Iban",
+            type: "string"
+        },{
+            title: 'country',
+            name: 'country',
+            type: 'string',
+            options: {
+                list: [
+                    ...countries
+                ],
+            }
+        }, {
+            name: "added_timestamp",
+            title: "Date",
+            type: "datetime"
+        }
+    ]
     }, {
         name: "wallets",
         title: "Wallets",

@@ -9,6 +9,10 @@ export default {
         name: "username",
         title: "Username",
         type: "string"
+    },{
+        name: "birthday",
+        title: "Date of birth",
+        type: "date"
     }, {
         name: "balances",
         title: "Balances",

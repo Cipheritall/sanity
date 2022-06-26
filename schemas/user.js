@@ -1,5 +1,6 @@
+import externalauth from './externalauth'
 import countries from './countries'
-import {MdVerifiedUser, MdCall, MdAttachMoney}  from 'react-icons/md'
+import { MdVerifiedUser, MdCall, MdAttachMoney } from 'react-icons/md'
 
 export default {
     name: "user",
@@ -9,27 +10,25 @@ export default {
         name: "username",
         title: "Username",
         type: "string"
-    },  {
+    }, {
         title: 'External auth',
-        name: 'auth',
-        type: 'object',
-        fields: [
-            { name: 'facebook_uid', type: 'string', title: 'Facebook UID' },
-            { name: 'facebooklastlogin', type: 'datetime', title: 'Last login' },
-            
-            { name: 'google_uid', type: 'string', title: 'Google UID' },
-            { name: 'googlelastlogin', type: 'datetime', title: 'Last login' },
-
-            { name: 'github_uid', type: 'string', title: 'Github UID' },
-            { name: 'githublastlogin', type: 'datetime', title: 'Last login' }
+        name: 'auths',
+        type: 'array',
+        of: [
+            {
+                name:"auth_detail",
+                type: "object",
+                fields: [
+                    { name: 'provider', type: 'string', title: 'Provider' },
+                    { name: "external_data" , type: 'reference', to: { type: "externalauth" } }]
+            }
         ]
     },
     {
         title: 'Verified KYC',
         name: 'isverified',
-        icon: MdVerifiedUser,
         type: 'boolean'
-    },{
+    }, {
         name: "birthday",
         title: "Date of birth",
         type: "date"
@@ -56,7 +55,7 @@ export default {
     }, {
         name: "phone",
         title: "Phone Number",
-        type: "object", 
+        type: "object",
         fields: [{
             title: 'country',
             name: 'country',
@@ -68,7 +67,7 @@ export default {
             }
         }, {
             name: "phoneNumber",
-            title: "Phone Number",        
+            title: "Phone Number",
             icon: MdCall,
             type: "string"
         }]

@@ -15,6 +15,7 @@ import game from './game'
 import user from './user'
 import wallet from './wallet'
 import site_config from './site_config'
+import externalauth from "./externalauth"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -35,6 +36,7 @@ export default createSchema({
     game,
     user,
     wallet,
-    provider    
+    provider,
+    externalauth
   ])
 })

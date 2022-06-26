@@ -9,7 +9,7 @@ export default {
         name: "username",
         title: "Username",
         type: "string"
-    },{
+    }, {
         name: "birthday",
         title: "Date of birth",
         type: "date"
@@ -25,9 +25,19 @@ export default {
         title: "Email",
         type: "email"
     }, {
+        title: 'Address',
+        name: 'address',
+        type: 'object',
+        fields: [
+            { name: 'street', type: 'string', title: 'Street name' },
+            { name: 'streetNo', type: 'string', title: 'Street number' },
+            { name: 'city', type: 'string', title: 'City' }
+        ]
+    }, {
         name: "phone",
         title: "Phone Number",
-        type: "object",
+        type: "object", 
+        icon,
         fields: [{
             title: 'country',
             name: 'country',
@@ -54,7 +64,7 @@ export default {
             name: "iban",
             title: "Iban",
             type: "string"
-        },{
+        }, {
             title: 'country',
             name: 'country',
             type: 'string',
@@ -68,7 +78,7 @@ export default {
             title: "Date",
             type: "datetime"
         }
-    ]
+        ]
     }, {
         name: "wallets",
         title: "Wallets",

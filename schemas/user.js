@@ -15,11 +15,11 @@ export default {
         name: 'auth',
         type: 'object',
         fields: [
-            { name: 'facebook_auth', type: 'auth', title: 'Facebook AUTH' },
+            { name: 'facebook_auth', type: 'reference', to:"auth", title: 'Facebook AUTH' },
             
-            { name: 'google_auth', type: 'auth', title: 'Google AUTH' },
+            { name: 'google_auth',  type: 'reference', to:'auth', title: 'Google AUTH' },
 
-            { name: 'github_auth', type: 'auth', title: 'Github AUTH' },
+            { name: 'github_auth',  type: 'reference', to: 'auth', title: 'Github AUTH' },
         ]
     },
     {

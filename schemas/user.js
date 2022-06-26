@@ -1,4 +1,4 @@
-import auth from './auth'
+import external_auth from './external_auth'
 import countries from './countries'
 import {MdVerifiedUser, MdCall, MdAttachMoney}  from 'react-icons/md'
 
@@ -20,7 +20,7 @@ export default {
                 title: "Provider",
                 type: "string"
             },
-            { type: "auth" }]
+            { type: "external_auth" }]
     },
     {
         title: 'Verified KYC',

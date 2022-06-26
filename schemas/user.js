@@ -13,14 +13,14 @@ export default {
     },  {
         title: 'External auth',
         name: 'auth',
-        type: 'object',
-        fields: [
-            { name: 'facebook_auth', type: 'reference', to:"auth", title: 'Facebook AUTH' },
-            
-            { name: 'google_auth',  type: 'reference', to:'auth', title: 'Google AUTH' },
-
-            { name: 'github_auth',  type: 'reference', to: 'auth', title: 'Github AUTH' },
-        ]
+        type: 'array',
+        of: [
+            {
+                name: "provider",
+                title: "Provider",
+                type: "string"
+            },
+            { type: "auth" }]
     },
     {
         title: 'Verified KYC',

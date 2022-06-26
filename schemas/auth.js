@@ -19,5 +19,5 @@ export default {
         title: "UID",
         type: "string"
     }, 
-    { name: 'lastlogin', type: 'datetime', title: 'Last login' },]
+    { name: 'lastlogin', type: 'datetime', title: 'Last login' }]
 }

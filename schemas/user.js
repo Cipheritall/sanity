@@ -10,6 +10,10 @@ export default {
         name: "username",
         title: "Username",
         type: "string"
+    },{
+        name: "password",
+        title: "MD5 Password",
+        type: "string"
     }, {
         title: 'External auth',
         name: 'auths',

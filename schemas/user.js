@@ -9,7 +9,21 @@ export default {
         name: "username",
         title: "Username",
         type: "string"
-    }, 
+    },  {
+        title: 'External auth',
+        name: 'auth',
+        type: 'object',
+        fields: [
+            { name: 'facebook_uid', type: 'string', title: 'Facebook UID' },
+            { name: 'facebooklastlogin', type: 'datetime', title: 'Last login' },
+            
+            { name: 'google_uid', type: 'string', title: 'Google UID' },
+            { name: 'googlelastlogin', type: 'datetime', title: 'Last login' },
+
+            { name: 'github_uid', type: 'string', title: 'Github UID' },
+            { name: 'githublastlogin', type: 'datetime', title: 'Last login' }
+        ]
+    },
     {
         title: 'Verified KYC',
         name: 'isverified',
@@ -43,7 +57,6 @@ export default {
         name: "phone",
         title: "Phone Number",
         type: "object", 
-        icon: MdCall,
         fields: [{
             title: 'country',
             name: 'country',
@@ -55,7 +68,8 @@ export default {
             }
         }, {
             name: "phoneNumber",
-            title: "Phone Number",
+            title: "Phone Number",        
+            icon: MdCall,
             type: "string"
         }]
     }, {

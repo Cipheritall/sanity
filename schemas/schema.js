@@ -41,6 +41,7 @@ export default createSchema({
     wallet,
     provider,
     externalauth,
-    session
+    session,
+    post
   ])
 })

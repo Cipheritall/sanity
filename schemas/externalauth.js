@@ -7,6 +7,10 @@ export default {
         title: "Email",
         type: "email"
     }, {
+        name: "provider",
+        title: "Provider",
+        type: "string"
+    }, {
         name: "image",
         title: "Image",
         type: "url"
@@ -18,6 +22,10 @@ export default {
         name: "uid",
         title: "UID",
         type: "string"
+    }, {
+        name: "validUntil",
+        title: "Valid Until",
+        type: "datetime"
     }, 
     { name: 'lastlogin', type: 'datetime', title: 'Last login' }]
 }

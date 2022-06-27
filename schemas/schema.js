@@ -33,6 +33,7 @@ export default createSchema({
     
     post,
     author,
+    page,
     category,
     blockContent,
     site_config,

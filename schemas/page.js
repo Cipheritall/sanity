@@ -2,8 +2,8 @@ import author from './author'
 
 
 export default {
-    name: 'post',
-    title: 'Post',
+    name: 'page',
+    title: 'Page',
     type: 'document',
     fields: [
       {

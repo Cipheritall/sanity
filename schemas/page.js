@@ -1,3 +1,6 @@
+import author from './author'
+
+
 export default {
     name: 'post',
     title: 'Post',

@@ -3,11 +3,6 @@ export default {
     title: "External Authentification",
     type: "document",
     fields: [{
-        name: "_id",
-        title: "ID",
-        type: "string",
-        validation: Rule => Rule.required()
-    },{
         name: "email",
         title: "Email",
         type: "email"

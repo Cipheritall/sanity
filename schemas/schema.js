@@ -31,8 +31,8 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     
-    // post,
-    // author,
+    post,
+    author,
     category,
     blockContent,
     site_config,
@@ -42,6 +42,5 @@ export default createSchema({
     provider,
     externalauth,
     session,
-    post
   ])
 })

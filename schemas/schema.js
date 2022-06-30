@@ -14,6 +14,8 @@ import category from './category'
 import provider from './provider'
 import game from './game'
 import user from './user'
+import player from './player'
+
 import wallet from './wallet'
 import site_config from './site_config'
 import externalauth from "./externalauth"
@@ -39,6 +41,7 @@ export default createSchema({
     site_config,
     game,
     user,
+    player,
     wallet,
     provider,
     externalauth,

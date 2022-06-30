@@ -1,8 +1,3 @@
-import externalauth from './externalauth'
-import session from './session'
-import countries from './countries'
-import { MdVerifiedUser, MdCall, MdAttachMoney } from 'react-icons/md'
-
 export default {
     name: "user",
     title: "user",

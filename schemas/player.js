@@ -4,8 +4,8 @@ import countries from './countries'
 import { MdVerifiedUser, MdCall, MdAttachMoney } from 'react-icons/md'
 
 export default {
-    name: "user",
-    title: "user",
+    name: "player",
+    title: "Player",
     type: "document",
     fields: [{
         name: "username",
